@@ -1,0 +1,46 @@
+$BACKGROUND: rgba(0,0,0, .5);
+.loader {
+  min-height: 60px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+
+  &_hide {
+    display: none;
+  }
+
+  &__animation {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: conic-gradient(darkcyan, transparent);
+
+    animation: rotating 1s linear infinite;
+  }
+
+  &__animation::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(360deg);
+
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
+

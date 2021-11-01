@@ -1,0 +1,19 @@
+.user-card {
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: gray;
+  font-weight: 500;
+}
+
+.user-card__avatar {
+  width: 30%;
+}
+
+.user-card__full-name {
+  padding: 10px;
+}

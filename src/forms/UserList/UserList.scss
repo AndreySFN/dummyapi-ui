@@ -1,0 +1,14 @@
+.user-list__content {
+  position: relative;
+  height:100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  padding: 5px;
+}
+
+.user-list__content>* {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
